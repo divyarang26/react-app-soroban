@@ -36,13 +36,13 @@
 }
  
  .card-header{
-    font-size: 3rem;
+    font-size: 1.4rem;
     color: slategrey;
     text-align: center
  }
  
  .card-form {
-	 padding: 2rem 1rem 0;
+	 padding: 1rem 1rem 0;
 }
  .input {
 	 display: flex;

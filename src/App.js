@@ -1,47 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import Hello from './Component/Hello';
 import Vault_req from './Component/Vault_req/Vault_req';
 import Header from './Component/Header';
 import Deposit from './Component/Deposit/Deposit';
 import Borrow from './Component/Borrow/Borrow';
 import Repay from './Component/Repay/Repay';
 import Withdraw from './Component/Withdraw/Withdraw';
-
+import Wallet from './Component/Wallet/Wallet';
+import '../src/Component/Hello.css';
+import Hello from './Component/Hello';
 
 function App() {
   return (
-    <div >
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
-      </header> */}
-      <Header />
-      <div style={{ display: "flex" }}>
-        <div className='container'>
-          {/* <Hello /> */}
+    <div>
+      <Wallet />
+      <div style={{ display: 'flex',justifyContent:'center' }}>
+        <div >
+          <Hello/>
+          {/* <Vault_req /> */}
         </div>
-        <div className='container'>
-          <Vault_req />
-        </div>
-        <div className='container'>
+        {/* <div className='container'>
           <Deposit></Deposit>
-        </div>
-        
+        </div> */}
       </div>
-      <div style={{ display: "flex" }}>
-      <div className='container'>
+      {/* <div style={{ display: 'flex' }}>
+        <div className='container'>
           <Borrow></Borrow>
         </div>
         <div className='container'>
@@ -50,7 +32,7 @@ function App() {
         <div className='container'>
           <Withdraw></Withdraw>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
